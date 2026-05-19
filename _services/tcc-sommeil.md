@@ -2,7 +2,7 @@
 title: "TCC pour les troubles du sommeil"
 description: "Insomnie, hypersomnolence, réveils nocturnes — reconnaître les signes d'un trouble du sommeil et son impact sur la vie quotidienne."
 icon: "🌙"
-weight: 6
+weight: 4
 ---
 
 Les troubles du sommeil sont extrêmement fréquents et souvent sous-estimés. Bien plus qu'une simple fatigue, un sommeil durablement perturbé affecte l'humeur, la concentration, les relations et la santé physique.

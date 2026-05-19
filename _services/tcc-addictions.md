@@ -2,7 +2,7 @@
 title: "TCC pour les conduites addictives"
 description: "Addictions à l'alcool, aux substances, aux comportements — reconnaître les signes d'une conduite addictive et son emprise sur la vie quotidienne."
 icon: "🔄"
-weight: 7
+weight: 2
 ---
 
 Les conduites addictives ne se réduisent pas à une question de volonté ou de caractère. Ce sont des troubles complexes, souvent entretenus par des mécanismes psychologiques profonds, qui méritent une prise en charge adaptée et sans jugement.

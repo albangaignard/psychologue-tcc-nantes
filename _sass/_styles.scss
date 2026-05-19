@@ -295,9 +295,9 @@ p { margin-top: 0; margin-bottom: 1rem; }
     inset: 0;
     background: linear-gradient(
       120deg,
-      rgba(30, 24, 16, 0.80) 0%,
-      rgba(30, 24, 16, 0.55) 55%,
-      rgba(30, 24, 16, 0.22) 100%
+      rgba(30, 24, 16, 0.90) 0%,
+      rgba(30, 24, 16, 0.75) 55%,
+      rgba(30, 24, 16, 0.50) 100%
     );
     z-index: 0;
   }
@@ -389,7 +389,6 @@ p { margin-top: 0; margin-bottom: 1rem; }
   display: flex;
   flex-direction: column;
   border-top: 4px solid $primary-light;
-  margin-bottom: 1.5rem;
 
   &:hover {
     transform: translateY(-4px);

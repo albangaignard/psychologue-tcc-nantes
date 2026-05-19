@@ -11,7 +11,13 @@ layout: default
         <li>{{ page.title }}</li>
       </ol>
     </nav>
+    {% if page.photo %}
+    <div class="team-profile-avatar" style="margin-top: 1.5rem; background: none; padding: 0; overflow: hidden;">
+      <img src="{{ page.photo | relative_url }}" alt="Photo de {{ page.title }}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+    </div>
+    {% else %}
     <div class="team-profile-avatar" style="margin-top: 1.5rem;">{{ page.initials }}</div>
+    {% endif %}
     <h1 class="team-profile-name">{{ page.title }}</h1>
     <p class="team-profile-specialty">{{ page.role }}</p>
     <div class="team-profile-tags">
@@ -42,16 +48,6 @@ layout: default
         </div>
         {% endif %}
 
-        {% if page.specialites %}
-        <div class="team-profile-sidebar">
-          <h4>Spécialités</h4>
-          <ul>
-            {% for s in page.specialites %}
-              <li>{{ s }}</li>
-            {% endfor %}
-          </ul>
-        </div>
-        {% endif %}
 
         <div style="text-align: center; margin-top: 1.5rem;">
           <a href="{{ '/contact/' | relative_url }}" class="btn btn-accent">

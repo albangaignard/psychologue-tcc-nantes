@@ -1,7 +1,10 @@
-# Palette de couleurs — deux options disponibles :
-#   (vide)        → Forêt apaisante (verts + terre cuite) — défaut
-#   rose-sauge    → Rose & Sauge (vieux rose + sauge + crème)
-palette: rose-sauge
+# Palette de couleurs — trois options disponibles :
+#   (vide)        → Forêt apaisante  (verts + terre cuite)         — défaut
+#   rose-sauge    → Rose & Sauge     (vieux rose + sauge + crème)
+#   bleu-sable    → Bleu & Sable     (bleu ardoise + sable doré)
+
+#palette: rose-sauge
+#palette: bleu-sable
 
 title: "Ana Linaza Cea"
 subtitle: "Psychologue Clinicienne · Psychothérapeute TCC"
@@ -13,6 +16,9 @@ email: ana_linaza@yahoo.fr
 phone: "06 63 64 33 81"
 address: "129 rue des Hauts Pavés, 44000 Nantes"
 maps_url: "https://www.google.fr/maps/place/129+Rue+Hauts+Pavés,+44000+Nantes"
+rpps: "449325372"
+transport: "Tram ligne 3 — arrêt Félix Faure"
+aftcc_url: "https://www.aftcc.org"
 
 # Réseaux sociaux
 linkedin_url: ""

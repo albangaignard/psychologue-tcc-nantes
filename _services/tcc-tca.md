@@ -2,7 +2,7 @@
 title: "TCC pour les troubles alimentaires"
 description: "Anorexie, boulimie, hyperphagie — reconnaître les signes d'un trouble du comportement alimentaire."
 icon: "🤝"
-weight: 4
+weight: 3
 ---
 
 Les troubles du comportement alimentaire (TCA) sont des pathologies sérieuses qui touchent le rapport à la nourriture, au corps et à l'image de soi. Ils peuvent concerner tout le monde, quels que soient l'âge, le sexe ou le poids apparent.

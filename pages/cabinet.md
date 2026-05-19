@@ -16,19 +16,32 @@ permalink: /cabinet/
   <div class="container">
     <div class="row">
       <div class="col-lg-8">
-        <figure style="margin: 0 0 2.5rem;">
-          <img src="{{ '/assets/images/IMG_1310.jpeg' | relative_url }}"
-               alt="Salle de consultation d'Ana Linaza Cea — un espace chaleureux et confidentiel"
-               style="width: 100%; border-radius: 10px; box-shadow: 0 4px 24px rgba(46,43,34,0.12);">
-          <figcaption style="margin-top: 0.6rem; font-size: 0.82rem; color: #888580; text-align: center; font-style: italic;">
-            L'une de nos salles de consultation — un cadre calme et confidentiel pour votre suivi.
-          </figcaption>
-        </figure>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 0 0 2.5rem;">
+          <figure style="margin: 0;">
+            <img src="{{ '/assets/images/IMG_1311.png' | relative_url }}"
+                 alt="Espace d'accueil du cabinet d'Ana Linaza Cea"
+                 style="width: 100%; height: 260px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 24px rgba(46,43,34,0.12);">
+            <figcaption style="margin-top: 0.6rem; font-size: 0.82rem; color: #888580; text-align: center; font-style: italic;">
+              Espace patient
+            </figcaption>
+          </figure>
+          <figure style="margin: 0;">
+            <img src="{{ '/assets/images/IMG_1310.jpeg' | relative_url }}"
+                 alt="Salle de consultation d'Ana Linaza Cea — un espace chaleureux et confidentiel"
+                 style="width: 100%; height: 260px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 24px rgba(46,43,34,0.12);">
+            <figcaption style="margin-top: 0.6rem; font-size: 0.82rem; color: #888580; text-align: center; font-style: italic;">
+              Salle de consultation
+            </figcaption>
+          </figure>
+        </div>
 
         <h2 class="section-title">Notre philosophie</h2>
-        <p>Ce cabinet a été fondé autour d'une conviction profonde : la souffrance psychologique mérite d'être prise au sérieux, traitée avec rigueur, et accompagnée avec humanité.</p>
+        <p>J'ai créé ce cabinet pour offrir un accompagnement à la hauteur de ce que les personnes traversent — ni dans l'urgence, ni dans le flou, mais avec méthode et présence. Ici, chaque personne est accueillie telle qu'elle est, avec ses difficultés et son histoire, dans un espace sécurisant et sans jugement. Notre volonté : proposer un suivi rigoureux, humain et accessible, fondé sur ce que la recherche a montré d'efficace.</p>
 
-        <p>Nous pratiquons exclusivement des thérapies cognitives et comportementales (TCC) — non pas par dogmatisme, mais parce que ce sont les approches dont l'efficacité est la mieux démontrée par la recherche clinique internationale. Chaque protocole que nous utilisons a été évalué dans des études rigoureuses et est recommandé par les principales autorités de santé.</p>
+        <p>Nous pratiquons les thérapies cognitives et comportementales (TCC) et les approches de 3ème vague (thérapie d'acceptation et d'engagement (A
+         +CT), pleine conscience (mindfulness), thérapie cognitive processuelle (TCP), thérapie comportementale dialectique (TCD), thérapie des schémas, etc.) Ce n'est pas une collecti
+         +on d'outils, mais un ensemble cohérent d'approches dont l'efficacité est démontrée par la recherche clinique internationale et recommandée par les principales autorités de sant
+         +é.</p>
 
         <p>Notre approche est <strong>collaborative</strong> : nous travaillons avec vous, pas à votre place. Vous êtes l'expert de votre propre vie ; nous apportons les outils et le cadre thérapeutique. C'est ensemble que les changements se construisent.</p>
 
@@ -38,12 +51,12 @@ permalink: /cabinet/
           <div class="feature-item">
             <div class="feature-icon">🌍</div>
             <h4>Consultations bilingues</h4>
-            <p>Ana Linaza Cea reçoit en <strong>français et en espagnol</strong>. Les consultations peuvent se dérouler dans la langue dans laquelle vous vous exprimez le plus naturellement.</p>
+            <p>Je vous reçois en <strong>français et en espagnol</strong>. Les consultations peuvent se dérouler dans la langue dans laquelle vous vous exprimez le plus naturellement.</p>
           </div>
           <div class="feature-item">
             <div class="feature-icon">🔬</div>
             <h4>Pratique fondée sur les preuves</h4>
-            <p>Nous utilisons uniquement des protocoles dont l'efficacité a été validée par la recherche. Pas de méthodes non évaluées.</p>
+            <p>Nous utilisons uniquement des approches dont l'efficacité a été validée par la recherche. Pas de méthodes non évaluées.</p>
           </div>
           <div class="feature-item">
             <div class="feature-icon">🤝</div>
@@ -75,15 +88,9 @@ permalink: /cabinet/
       </div>
 
       <div class="col-lg-4">
+
         <div class="info-box">
-          <h4>Tarifs</h4>
-          <p>
-            Première consultation : <strong>120 €</strong> (1h30)<br>
-            Séance individuelle : <strong>90 €</strong> (50 min)<br>
-            Séance adolescent : <strong>80 €</strong> (50 min)<br>
-            Guidance parentale : <strong>90 €</strong> (50 min)<br><br>
-            <em>Possibilité de remboursement partiel via certaines mutuelles. Renseignez-vous auprès de votre organisme.</em>
-          </p>
+          <p><em>Possibilité de remboursement partiel via certaines mutuelles. Renseignez-vous auprès de votre organisme.</em></p>
         </div>
 
         <div class="info-box">

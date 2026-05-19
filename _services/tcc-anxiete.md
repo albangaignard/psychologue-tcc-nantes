@@ -2,7 +2,7 @@
 title: "TCC pour l'anxiété"
 description: "Troubles anxieux, phobies, TOC et attaques de panique — reconnaître les signes pour mieux les surmonter."
 icon: "🌿"
-weight: 1
+weight: 7
 ---
 
 Les troubles anxieux sont les troubles psychologiques les plus fréquents. En France, on estime qu'une personne sur quatre sera touchée par un trouble anxieux au cours de sa vie.

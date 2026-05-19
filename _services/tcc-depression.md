@@ -2,7 +2,7 @@
 title: "TCC pour la dépression"
 description: "Dépression, burn-out et troubles de l'humeur — reconnaître les signes pour retrouver l'élan vital."
 icon: "☀️"
-weight: 2
+weight: 6
 ---
 
 La dépression est bien plus qu'une simple tristesse. C'est un trouble complexe qui touche les pensées, les émotions, le corps et les comportements.

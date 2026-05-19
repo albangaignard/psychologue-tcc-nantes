@@ -2,7 +2,7 @@
 title: "TCC pour enfants et adolescents"
 description: "Accompagnement spécialisé des jeunes de 6 à 18 ans et de leurs familles face aux difficultés émotionnelles et comportementales."
 icon: "🌱"
-weight: 3
+weight: 1
 ---
 
 Enfants et adolescents peuvent bénéficier des TCC, adaptées à leur âge et à leur niveau de développement. Une prise en charge précoce peut significativement modifier la trajectoire d'un enfant.

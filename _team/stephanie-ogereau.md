@@ -1,9 +1,9 @@
 ---
-title: "Dr. Marie Lefèvre"
-prenom: "Marie"
-role: "Psychologue clinicienne — Anxiété & Phobies"
-initials: "ML"
-weight: 1
+title: "Stéphanie Ogereau"
+prenom: "Stéphanie"
+role: "Psychologue du développement"
+initials: "SO"
+weight: 2
 tags:
   - Troubles anxieux
   - Phobies spécifiques

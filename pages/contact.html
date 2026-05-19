@@ -8,7 +8,8 @@ permalink: /contact/
 <div class="page-header">
   <div class="container">
     <h1>Prendre rendez-vous</h1>
-    <p class="lead">Les rendez-vous se prennent directement par mail ou par téléphone auprès de chaque thérapeute. Choisissez le praticien qui correspond le mieux à votre situation.</p>
+    <p class="lead">Les rendez-vous se prennent directement par mail ou par téléphone auprès de chaque thérapeute.
+      Choisissez le praticien qui correspond le mieux à votre situation.</p>
   </div>
 </div>
 
@@ -18,9 +19,6 @@ permalink: /contact/
 
       <!-- Cartes thérapeutes -->
       <div class="col-lg-8">
-        <p style="color: var(--clr-text-secondary); margin-bottom: 2rem; font-size: 0.95rem;">
-          Vous pouvez contacter directement le ou la thérapeute de votre choix. Si vous hésitez, n'hésitez pas à joindre le cabinet au <a href="tel:{{ site.phone }}">{{ site.phone }}</a> pour être orienté(e).
-        </p>
 
         {% assign sorted_team = site.team | sort: "weight" %}
         {% for member in sorted_team %}
@@ -41,11 +39,22 @@ permalink: /contact/
             </div>
             <div class="rdv-card-contacts">
               <a href="mailto:{{ member.email }}" class="rdv-contact-btn rdv-contact-mail">
-                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  aria-hidden="true">
+                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
                 {{ member.email }}
               </a>
               <a href="tel:{{ member.phone | remove: ' ' }}" class="rdv-contact-btn rdv-contact-phone">
-                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.07 12 19.79 19.79 0 0 1 1 3.18 2 2 0 0 1 2.18 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.09a16 16 0 0 0 5.55 5.54l.42-.42a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  aria-hidden="true">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.07 12 19.79 19.79 0 0 1 1 3.18 2 2 0 0 1 2.18 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.09a16 16 0 0 0 5.55 5.54l.42-.42a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg>
                 {{ member.phone }}
               </a>
             </div>
@@ -62,20 +71,16 @@ permalink: /contact/
             {{ site.address }}<br><br>
             Accès PMR disponible
           </address>
-          <a href="{{ site.maps_url }}" target="_blank" rel="noopener" class="btn btn-outline" style="margin-top: 1rem; font-size: 0.875rem; display: inline-block;">Voir sur Google Maps →</a>
+          <a href="{{ site.maps_url }}" target="_blank" rel="noopener" class="btn btn-outline"
+            style="margin-top: 1rem; font-size: 0.875rem; display: inline-block;">Voir sur Google Maps →</a>
         </div>
 
-        <div class="info-box">
-          <h4>Première consultation</h4>
-          <p style="font-size: 0.875rem; color: var(--clr-text-secondary); line-height: 1.7; margin: 0;">
-            La première séance est une consultation d'évaluation (1h – 1h30). Elle permet de faire connaissance, de préciser votre demande et de définir ensemble les objectifs du suivi.
-          </p>
-        </div>
 
         <div style="background: #FCEBEB; border-left: 4px solid #E24B4A; border-radius: 0 8px 8px 0; padding: 1.25rem;">
           <p style="margin: 0; font-size: 0.875rem; color: var(--clr-text-secondary); line-height: 1.6;">
             <strong style="color: #A32D2D;">Urgence psychologique ?</strong><br>
-            En cas de crise ou de pensées suicidaires, appelez le <strong>3114</strong> (numéro national, 24h/24) ou le <strong>15</strong> (SAMU).
+            En cas de crise ou de pensées suicidaires, appelez le <strong>3114</strong> (numéro national, 24h/24) ou le
+            <strong>15</strong> (SAMU).
           </p>
         </div>
       </div>

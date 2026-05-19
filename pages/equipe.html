@@ -1,0 +1,47 @@
+---
+layout: default
+title: "L'équipe"
+description: "Quatre psychologues cliniciens spécialisés en TCC, au service de votre mieux-être."
+permalink: /equipe/
+---
+
+<div class="page-header">
+  <div class="container">
+    <h1>Notre équipe</h1>
+    <p class="lead">Quatre psychologues cliniciens spécialisés en thérapies cognitives et comportementales, engagés dans une pratique rigoureuse, bienveillante et centrée sur vos besoins.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+      {% assign team_sorted = site.team | sort: "weight" %}
+      {% for member in team_sorted %}
+      <div class="col-md-6" style="margin-bottom: 2rem;">
+        <div class="team-card" style="display: flex; flex-direction: row; height: 100%;">
+          <div class="team-card-avatar" style="width: 120px; min-width: 120px; height: auto; font-size: 2.5rem; border-radius: 0;">{{ member.initials }}</div>
+          <div class="team-card-body">
+            <div class="team-card-title">{{ member.role }}</div>
+            <div class="team-card-name">{{ member.title }}</div>
+            <div style="display: flex; flex-wrap: wrap; gap: 4px; margin: 0.5rem 0;">
+              {% for tag in member.tags limit:3 %}
+                <span class="tag">{{ tag }}</span>
+              {% endfor %}
+            </div>
+            <p class="team-card-bio" style="margin-top: 0.5rem;">{{ member.excerpt | strip_html | truncatewords: 18 }}</p>
+            <a href="{{ member.url | relative_url }}" class="team-card-link">Voir le profil complet →</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>Prendre rendez-vous</h2>
+    <p>Chaque thérapeute dispose de ses propres créneaux. Contactez-nous pour être orienté vers le membre de l'équipe le plus adapté à votre demande.</p>
+    <a href="{{ '/contact/' | relative_url }}" class="btn btn-light">Contacter le cabinet</a>
+  </div>
+</section>

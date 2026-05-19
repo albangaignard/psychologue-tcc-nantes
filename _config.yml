@@ -1,0 +1,59 @@
+# Palette de couleurs — deux options disponibles :
+#   (vide)        → Forêt apaisante (verts + terre cuite) — défaut
+#   rose-sauge    → Rose & Sauge (vieux rose + sauge + crème)
+palette: rose-sauge
+
+title: "Ana Linaza Cea"
+subtitle: "Psychologue Clinicienne · Psychothérapeute TCC"
+description: "Ana Linaza Cea, psychologue clinicienne et psychothérapeute TCC à Nantes. Consultations en français et en espagnol. Un accompagnement individualisé, rigoureux et bienveillant."
+baseurl: ""
+url: ""
+
+email: ana_linaza@yahoo.fr
+phone: "06 63 64 33 81"
+address: "129 rue des Hauts Pavés, 44000 Nantes"
+maps_url: "https://www.google.fr/maps/place/129+Rue+Hauts+Pavés,+44000+Nantes"
+
+# Réseaux sociaux
+linkedin_url: ""
+twitter_url: ""
+
+# Collections
+collections:
+  team:
+    output: true
+    permalink: /equipe/:name/
+  services:
+    output: true
+    permalink: /approches/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "team"
+    values:
+      layout: "team"
+  - scope:
+      path: ""
+      type: "services"
+    values:
+      layout: "service"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+# Build
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .bundle
+  - .jekyll-cache

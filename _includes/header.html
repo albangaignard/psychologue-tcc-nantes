@@ -1,0 +1,34 @@
+<nav class="navbar">
+  <div class="container">
+    <a class="navbar-brand" href="{{ '/' | relative_url }}">
+      <svg class="brand-icon" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="21" cy="21" r="21" fill="#5C7A5C"/>
+        <path d="M21 10 C15 10 11 14.5 11 19.5 C11 24.5 15 28 21 32 C27 28 31 24.5 31 19.5 C31 14.5 27 10 21 10Z" fill="white" opacity="0.9"/>
+        <circle cx="21" cy="19" r="4" fill="#B5714A"/>
+      </svg>
+      <div>
+        <span class="brand-name">{{ site.title }}</span>
+        <span class="brand-tagline">{{ site.subtitle }}</span>
+      </div>
+    </a>
+
+    <button class="navbar-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="navbar-menu" id="navMenu">
+      <li><a class="navbar-link" href="{{ '/' | relative_url }}">Accueil</a></li>
+      <li><a class="navbar-link" href="{{ '/cabinet/' | relative_url }}">Le cabinet</a></li>
+      <li><a class="navbar-link" href="{{ '/equipe/' | relative_url }}">L'équipe</a></li>
+      <li><a class="navbar-link" href="{{ '/approches/' | relative_url }}">Nos approches</a></li>
+      <li><a class="navbar-link" href="{{ '/formation/' | relative_url }}">Formation & supervision</a></li>
+      <li><a class="btn btn-primary" href="{{ '/contact/' | relative_url }}">Prendre RDV</a></li>
+    </ul>
+  </div>
+</nav>
+
+<script>
+  document.getElementById('navToggle').addEventListener('click', function() {
+    document.getElementById('navMenu').classList.toggle('open');
+  });
+</script>

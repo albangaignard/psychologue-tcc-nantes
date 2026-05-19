@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="page-header">
+  <div class="container">
+    <nav aria-label="fil d'ariane">
+      <ol class="breadcrumb">
+        <li><a href="{{ '/' | relative_url }}">Accueil</a></li>
+        <li><a href="{{ '/approches/' | relative_url }}">Nos approches</a></li>
+        <li>{{ page.title }}</li>
+      </ol>
+    </nav>
+    <h1 style="margin-top: 1.5rem;">{{ page.title }}</h1>
+    {% if page.description %}<p class="lead">{{ page.description }}</p>{% endif %}
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="post-content">
+      {{ content }}
+    </div>
+    <div style="margin-top: 3rem;">
+      <a href="{{ '/contact/' | relative_url }}" class="btn btn-accent">Prendre rendez-vous</a>
+      <a href="{{ '/approches/' | relative_url }}" style="margin-left: 1rem; font-weight: 600; color: #5C7A5C;">← Toutes nos approches</a>
+    </div>
+  </div>
+</section>

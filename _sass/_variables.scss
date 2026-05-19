@@ -1,0 +1,110 @@
+// =====================================================
+// Thèmes — Cabinet Équilibre
+// =====================================================
+// Pour basculer de thème, ajouter data-theme="rose-sauge"
+// sur la balise <html> dans _layouts/default.html.
+// Retirer l'attribut (ou le passer à "foret") pour le défaut.
+// =====================================================
+
+// -----------------------------------------------------
+// Palette 1 : Forêt apaisante (défaut)
+// -----------------------------------------------------
+:root {
+  --clr-primary:        #5C7A5C;  // vert olive — confiance, ancrage
+  --clr-primary-dark:   #3E5A3E;  // vert foncé
+  --clr-primary-light:  #8FAE8A;  // vert sauge clair
+  --clr-primary-xlight: #D6E8D6;  // vert très clair (fonds)
+
+  --clr-accent:         #B5714A;  // terre cuite — chaleur, humanité
+  --clr-accent-dark:    #8C5232;  // terre cuite foncée
+  --clr-accent-light:   #D4A882;  // sable doux
+  --clr-accent-xlight:  #F2E4D6;  // crème chaude (fonds alternatifs)
+
+  --clr-background:     #F5F2ED;  // fond général crème naturel
+  --clr-text-primary:   #2E2B22;  // brun très foncé, chaleureux
+  --clr-text-secondary: #605E59;
+  --clr-text-muted:     #888580;
+}
+
+// -----------------------------------------------------
+// Palette 3 : Rose & Sauge
+// -----------------------------------------------------
+[data-theme="rose-sauge"] {
+  --clr-primary:        #7A8C6E;  // sauge désaturé
+  --clr-primary-dark:   #4A3728;  // brun chaud foncé
+  --clr-primary-light:  #9FAF8A;  // sauge clair
+  --clr-primary-xlight: #EDF0E8;  // fond sauge très clair
+
+  --clr-accent:         #C9847C;  // vieux rose
+  --clr-accent-dark:    #A5635B;  // vieux rose foncé
+  --clr-accent-light:   #DFB0AA;  // rose pâle
+  --clr-accent-xlight:  #F7EEE9;  // crème rosée (fonds alternatifs)
+
+  --clr-background:     #F2EDE4;  // fond crème chaud
+  --clr-text-primary:   #4A3728;  // brun chaud foncé
+  --clr-text-secondary: #6B5B4E;  // brun moyen
+  --clr-text-muted:     #9A8880;  // brun clair
+}
+
+// =====================================================
+// Aliases SCSS → CSS custom properties
+// Permet de garder la syntaxe $variable dans _styles.scss
+// sans aucune modification de ce fichier.
+// =====================================================
+
+$primary:        var(--clr-primary);
+$primary-dark:   var(--clr-primary-dark);
+$primary-light:  var(--clr-primary-light);
+$primary-xlight: var(--clr-primary-xlight);
+
+$accent:         var(--clr-accent);
+$accent-dark:    var(--clr-accent-dark);
+$accent-light:   var(--clr-accent-light);
+$accent-xlight:  var(--clr-accent-xlight);
+
+$background:     var(--clr-background);
+$text-primary:   var(--clr-text-primary);
+$text-secondary: var(--clr-text-secondary);
+$text-muted:     var(--clr-text-muted);
+
+// =====================================================
+// Neutres (communs aux deux thèmes)
+// =====================================================
+
+$white:          #FFFFFF;
+$gray-100:       #F0EDE8;
+$gray-200:       #E0DDD6;
+$gray-300:       #C8C5BC;
+$gray-400:       #A8A59C;
+$gray-500:       #888580;
+$gray-600:       #605E59;
+$gray-700:       #464440;
+$gray-800:       #2E2B26;
+$gray-900:       #1A1916;
+
+// =====================================================
+// Typographie
+// =====================================================
+
+$font-family-base:    'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+$font-family-heading: 'Merriweather', Georgia, 'Times New Roman', serif;
+$font-size-base:      1rem;
+$line-height-base:    1.7;
+
+// =====================================================
+// Espacements & effets
+// =====================================================
+
+$border-radius:    6px;
+$border-radius-lg: 10px;
+$box-shadow:       0 2px 20px rgba(46, 43, 34, 0.08);
+$box-shadow-lg:    0 4px 40px rgba(46, 43, 34, 0.12);
+$transition-base:  all 0.25s ease;
+
+// =====================================================
+// Navigation
+// =====================================================
+
+$nav-height: 72px;
+$nav-bg:     $white;
+$nav-border: $gray-200;

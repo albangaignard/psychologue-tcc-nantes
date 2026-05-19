@@ -1,0 +1,62 @@
+<footer class="footer">
+  <div class="container">
+    <div class="row footer-main">
+
+      <!-- Colonne 1 : identité + contact + horaires -->
+      <div class="col-md-4">
+        <div class="footer-logo">{{ site.title }}</div>
+        <p class="footer-tagline">{{ site.subtitle }}</p>
+        <p class="footer-contact">
+          <a href="{{ site.maps_url }}" target="_blank" rel="noopener">{{ site.address }}</a><br>
+          <a href="tel:{{ site.phone }}">{{ site.phone }}</a> ·
+          <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        </p>
+        <p class="footer-urgence">
+          Urgence psychologique : <strong>3114</strong>
+        </p>
+      </div>
+
+      <!-- Colonne 2 : liens groupés -->
+      <div class="col-md-3">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="{{ '/cabinet/' | relative_url }}">Le cabinet</a></li>
+          <li><a href="{{ '/equipe/' | relative_url }}">L'équipe</a></li>
+          <li><a href="{{ '/approches/' | relative_url }}">Nos approches</a></li>
+          <li><a href="{{ '/formation/' | relative_url }}">Formation & supervision</a></li>
+          <li><a href="{{ '/contact/' | relative_url }}">Contact & RDV</a></li>
+        </ul>
+      </div>
+
+      <!-- Colonne 3 : carte -->
+      <div class="col-md-5">
+        <h4>
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-1px; margin-right:5px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          Nous trouver
+        </h4>
+        <div class="footer-map-embed">
+          <iframe
+            src="https://maps.google.com/maps?q={{ site.address | url_encode }}&output=embed&hl=fr&z=15"
+            width="100%"
+            height="185"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Localisation du cabinet {{ site.title }}">
+          </iframe>
+        </div>
+        <p class="footer-map-link">
+          <a href="{{ site.maps_url }}" target="_blank" rel="noopener">Ouvrir dans Google Maps →</a>
+        </p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© {{ 'now' | date: "%Y" }} {{ site.title }} — Psychologue Clinicienne · Psychothérapeute TCC à Nantes. &nbsp;·&nbsp;
+      <a href="{{ '/mentions-legales/' | relative_url }}">Mentions légales</a> ·
+      <a href="{{ '/confidentialite/' | relative_url }}">Confidentialité</a></p>
+    </div>
+  </div>
+</footer>

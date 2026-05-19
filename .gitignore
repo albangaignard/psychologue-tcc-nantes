@@ -1,0 +1,10 @@
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+.DS_Store
+vendor/
+.bundle/
+*.gem
+pdfs/
+generate_pdfs.py

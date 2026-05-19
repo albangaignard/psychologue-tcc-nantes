@@ -1,0 +1,32 @@
+---
+layout: default
+title: "Nos approches"
+description: "Les thérapies cognitives et comportementales pratiquées par Ana Linaza Cea et son équipe."
+permalink: /approches/
+---
+
+<div class="page-header">
+  <div class="container">
+    <h1>Nos approches thérapeutiques</h1>
+    <p class="lead">Fondées sur des décennies de recherche clinique, les TCC sont aujourd'hui parmi les psychothérapies les mieux validées scientifiquement.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+      {% assign services_sorted = site.services | sort: "weight" %}
+      {% for service in services_sorted %}
+      <div class="col-md-6" style="margin-bottom: 2rem;">
+        <div class="service-card">
+          <div class="service-card-icon">{{ service.icon }}</div>
+          <h3>{{ service.title }}</h3>
+          <p>{{ service.description }}</p>
+          <p style="font-size: 0.9rem; color: #888580;">{{ service.excerpt | strip_html | truncatewords: 30 }}</p>
+          <a href="{{ service.url | relative_url }}">Découvrir cette approche →</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

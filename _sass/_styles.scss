@@ -1,0 +1,1163 @@
+// =====================================================
+// Styles principaux — Cabinet Équilibre
+// =====================================================
+
+// Reset & base
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $text-primary;
+  background-color: $background;
+  margin: 0;
+}
+
+img { max-width: 100%; height: auto; }
+
+a {
+  color: $primary;
+  text-decoration: none;
+  transition: $transition-base;
+  &:hover { color: $accent; }
+}
+
+// =====================================================
+// Typographie
+// =====================================================
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-heading;
+  font-weight: 700;
+  color: $text-primary;
+  line-height: 1.25;
+  margin-top: 0;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+
+p { margin-top: 0; margin-bottom: 1rem; }
+
+.lead {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: $text-secondary;
+  line-height: 1.8;
+}
+
+// =====================================================
+// Utilitaires
+// =====================================================
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -0.75rem;
+}
+
+[class*="col-"] {
+  padding: 0 0.75rem;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .col-md-4 { width: 33.333%; }
+  .col-md-6 { width: 50%; }
+  .col-md-8 { width: 66.666%; }
+  .col-md-3 { width: 25%; }
+}
+
+@media (min-width: 992px) {
+  .col-lg-4 { width: 33.333%; }
+  .col-lg-6 { width: 50%; }
+  .col-lg-8 { width: 66.666%; }
+  .col-lg-3 { width: 25%; }
+}
+
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.mt-0 { margin-top: 0; }
+.mb-0 { margin-bottom: 0; }
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 2rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mt-4 { margin-top: 2rem; }
+.py-4 { padding-top: 2rem; padding-bottom: 2rem; }
+.py-6 { padding-top: 4rem; padding-bottom: 4rem; }
+
+// =====================================================
+// Boutons
+// =====================================================
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.75rem;
+  border-radius: $border-radius;
+  font-family: $font-family-base;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  cursor: pointer;
+  transition: $transition-base;
+  border: 2px solid transparent;
+  text-decoration: none;
+
+  &-primary {
+    background-color: $primary;
+    color: $white;
+    border-color: $primary;
+    &:hover {
+      background-color: $primary-dark;
+      border-color: $primary-dark;
+      color: $white;
+    }
+  }
+
+  &-accent {
+    background-color: $accent;
+    color: $white;
+    border-color: $accent;
+    &:hover {
+      background-color: $accent-dark;
+      border-color: $accent-dark;
+      color: $white;
+    }
+  }
+
+  &-outline {
+    background-color: transparent;
+    color: $primary;
+    border-color: $primary;
+    &:hover {
+      background-color: $primary;
+      color: $white;
+    }
+  }
+
+  &-light {
+    background-color: $white;
+    color: $primary;
+    border-color: $white;
+    &:hover {
+      background-color: $primary-xlight;
+      color: $primary-dark;
+    }
+  }
+}
+
+// =====================================================
+// Navigation
+// =====================================================
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: $white;
+  border-bottom: 1px solid $gray-200;
+  height: $nav-height;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 1px 8px rgba(46, 43, 34, 0.06);
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  &-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-decoration: none;
+
+    .brand-name {
+      font-family: $font-family-heading;
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: $primary-dark;
+      line-height: 1.1;
+    }
+
+    .brand-tagline {
+      font-size: 0.72rem;
+      color: $text-muted;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      display: block;
+    }
+
+    .brand-icon {
+      width: 42px;
+      height: 42px;
+    }
+  }
+
+  &-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 0.25rem;
+    align-items: center;
+  }
+
+  &-link {
+    display: block;
+    padding: 0.5rem 0.85rem;
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: $text-secondary;
+    border-radius: $border-radius;
+    transition: $transition-base;
+    white-space: nowrap;
+    &:hover, &.active {
+      color: $primary;
+      background-color: $primary-xlight;
+    }
+  }
+
+  .btn {
+    padding: 0.5rem 1.25rem;
+    font-size: 0.875rem;
+  }
+
+  &-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    flex-direction: column;
+    gap: 5px;
+
+    span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background-color: $text-primary;
+      transition: $transition-base;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-menu {
+    display: none;
+    position: fixed;
+    top: $nav-height;
+    left: 0;
+    right: 0;
+    background: $white;
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid $gray-200;
+    box-shadow: $box-shadow;
+    gap: 0.25rem;
+    &.open { display: flex; }
+  }
+  .navbar-toggle { display: flex; }
+}
+
+// =====================================================
+// Hero
+// =====================================================
+
+.hero {
+  background: url('/assets/images/IMG_1310.jpeg') center center / cover no-repeat;
+  position: relative;
+  padding: 6rem 0 5rem;
+  color: $white;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      120deg,
+      rgba(30, 24, 16, 0.80) 0%,
+      rgba(30, 24, 16, 0.55) 55%,
+      rgba(30, 24, 16, 0.22) 100%
+    );
+    z-index: 0;
+  }
+
+  &-content { position: relative; z-index: 1; }
+
+  h1 {
+    color: $white;
+    font-size: 3rem;
+    margin-bottom: 1.25rem;
+    @media (max-width: 767px) { font-size: 2.1rem; }
+  }
+
+  .lead { color: rgba(255,255,255,0.88); }
+
+  &-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+
+  &-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 2rem;
+    padding: 0.4rem 1rem;
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 1.5rem;
+  }
+}
+
+// =====================================================
+// Sections génériques
+// =====================================================
+
+.section {
+  padding: 5rem 0;
+
+  &-title {
+    font-size: 2rem;
+    color: $primary-dark;
+    margin-bottom: 0.75rem;
+    &::after {
+      content: '';
+      display: block;
+      width: 48px;
+      height: 3px;
+      background-color: $accent;
+      margin-top: 0.75rem;
+    }
+    &.centered::after { margin-left: auto; margin-right: auto; }
+  }
+
+  &-subtitle {
+    font-size: 1.1rem;
+    color: $text-secondary;
+    max-width: 640px;
+    margin-bottom: 3rem;
+  }
+
+  &-alt {
+    background-color: $gray-100;
+  }
+
+  &-primary {
+    background-color: $primary-dark;
+    color: $white;
+    h2, h3 { color: $white; }
+    p { color: rgba(255,255,255,0.85); }
+  }
+}
+
+// =====================================================
+// Cartes services
+// =====================================================
+
+.service-card {
+  background: $white;
+  border-radius: $border-radius-lg;
+  padding: 2rem;
+  box-shadow: $box-shadow;
+  transition: $transition-base;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-top: 4px solid $primary-light;
+  margin-bottom: 1.5rem;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: $box-shadow-lg;
+    border-top-color: $primary;
+  }
+
+  &-icon {
+    width: 56px;
+    height: 56px;
+    background-color: $primary-xlight;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    color: $primary-dark;
+    margin-bottom: 0.75rem;
+  }
+
+  p {
+    color: $text-secondary;
+    font-size: 0.95rem;
+    flex-grow: 1;
+  }
+
+  a {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: $accent;
+    &:hover { color: $accent-dark; }
+  }
+}
+
+// =====================================================
+// Cartes équipe
+// =====================================================
+
+.team-card {
+  background: $white;
+  border-radius: $border-radius-lg;
+  overflow: hidden;
+  box-shadow: $box-shadow;
+  transition: $transition-base;
+  margin-bottom: 1.5rem;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: $box-shadow-lg;
+  }
+
+  &-photo {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    background-color: $primary-xlight;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-avatar {
+    width: 100%;
+    height: 260px;
+    background: linear-gradient(145deg, $primary-light, $primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $font-family-heading;
+    font-size: 4rem;
+    font-weight: 700;
+    color: $white;
+  }
+
+  &-body {
+    padding: 1.5rem;
+  }
+
+  &-name {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: $primary-dark;
+    margin-bottom: 0.25rem;
+  }
+
+  &-title {
+    font-size: 0.85rem;
+    color: $accent;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.75rem;
+  }
+
+  &-bio {
+    font-size: 0.9rem;
+    color: $text-secondary;
+    line-height: 1.6;
+  }
+
+  a.team-card-link {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: $primary;
+    &:hover { color: $accent; }
+  }
+}
+
+// =====================================================
+// Page équipe individuelle
+// =====================================================
+
+.team-profile {
+  &-header {
+    background: linear-gradient(135deg, $primary-dark 0%, $primary 100%);
+    padding: 4rem 0 3rem;
+    color: $white;
+  }
+
+  &-avatar {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.15);
+    border: 4px solid rgba(255,255,255,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $font-family-heading;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: $white;
+    margin-bottom: 1.5rem;
+  }
+
+  &-name {
+    font-size: 2.25rem;
+    color: $white;
+    margin-bottom: 0.5rem;
+  }
+
+  &-specialty {
+    font-size: 1.1rem;
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 1rem;
+  }
+
+  &-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  &-tag {
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 2rem;
+    padding: 0.3rem 0.85rem;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.9);
+  }
+
+  &-content {
+    padding: 4rem 0;
+  }
+
+  &-sidebar {
+    background: $white;
+    border-radius: $border-radius-lg;
+    padding: 1.75rem;
+    box-shadow: $box-shadow;
+    margin-bottom: 1.5rem;
+
+    h4 {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: $text-muted;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        padding: 0.4rem 0;
+        color: $text-secondary;
+        font-size: 0.9rem;
+        border-bottom: 1px solid $gray-100;
+        &:last-child { border-bottom: none; }
+        &::before {
+          content: '→';
+          color: $accent;
+          margin-right: 0.5rem;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+// =====================================================
+// Blog / actualités
+// =====================================================
+
+.post-card {
+  background: $white;
+  border-radius: $border-radius-lg;
+  overflow: hidden;
+  box-shadow: $box-shadow;
+  margin-bottom: 2rem;
+  transition: $transition-base;
+  display: flex;
+  flex-direction: column;
+
+  &:hover { box-shadow: $box-shadow-lg; }
+
+  &-body { padding: 1.75rem; flex-grow: 1; }
+
+  &-meta {
+    font-size: 0.8rem;
+    color: $text-muted;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  &-category {
+    background-color: $primary-xlight;
+    color: $primary;
+    padding: 0.2rem 0.65rem;
+    border-radius: 2rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+    a {
+      color: $text-primary;
+      &:hover { color: $primary; }
+    }
+  }
+
+  p { color: $text-secondary; font-size: 0.92rem; }
+
+  &-footer {
+    padding: 1rem 1.75rem;
+    border-top: 1px solid $gray-100;
+    a {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: $accent;
+      &:hover { color: $accent-dark; }
+    }
+  }
+}
+
+.post-header {
+  background: linear-gradient(135deg, $primary-dark 0%, $primary 100%);
+  padding: 4rem 0 3rem;
+  color: $white;
+  h1 { color: $white; font-size: 2.25rem; }
+  .post-meta { color: rgba(255,255,255,0.7); font-size: 0.875rem; }
+}
+
+.post-content {
+  padding: 4rem 0;
+  max-width: 780px;
+
+  h2 { color: $primary-dark; margin-top: 2.5rem; }
+  h3 { color: $primary; margin-top: 2rem; }
+
+  blockquote {
+    border-left: 4px solid $accent;
+    margin: 2rem 0;
+    padding: 1rem 1.5rem;
+    background: $accent-xlight;
+    border-radius: 0 $border-radius $border-radius 0;
+    color: $text-secondary;
+    font-style: italic;
+  }
+}
+
+// =====================================================
+// Ressources pédagogiques
+// =====================================================
+
+.resource-card {
+  background: $white;
+  border-radius: $border-radius-lg;
+  padding: 1.75rem;
+  box-shadow: $box-shadow;
+  margin-bottom: 1.5rem;
+  transition: $transition-base;
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+
+  &:hover { box-shadow: $box-shadow-lg; }
+
+  &-icon {
+    width: 52px;
+    height: 52px;
+    background-color: $accent-xlight;
+    border-radius: $border-radius;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+  }
+
+  &-body { flex-grow: 1; }
+
+  &-type {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: $accent;
+    margin-bottom: 0.35rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    color: $primary-dark;
+    margin-bottom: 0.5rem;
+  }
+
+  p { font-size: 0.9rem; color: $text-secondary; margin: 0; }
+
+  a.resource-link {
+    display: inline-block;
+    margin-top: 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: $primary;
+    &:hover { color: $accent; }
+  }
+}
+
+// =====================================================
+// Page cabinet / about
+// =====================================================
+
+.page-header {
+  background: linear-gradient(135deg, $primary-dark 0%, $primary 100%);
+  padding: 4rem 0 3rem;
+  color: $white;
+
+  h1 { color: $white; }
+  p { color: rgba(255,255,255,0.85); }
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.feature-item {
+  background: $white;
+  border-radius: $border-radius-lg;
+  padding: 1.75rem;
+  box-shadow: $box-shadow;
+
+  .feature-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  h4 {
+    color: $primary-dark;
+    margin-bottom: 0.5rem;
+  }
+
+  p { color: $text-secondary; font-size: 0.9rem; margin: 0; }
+}
+
+// =====================================================
+// CTA banner
+// =====================================================
+
+.cta-section {
+  background: linear-gradient(135deg, $accent-dark 0%, $accent 100%);
+  padding: 4rem 0;
+  text-align: center;
+  color: $white;
+
+  h2 { color: $white; margin-bottom: 1rem; }
+  p { color: rgba(255,255,255,0.85); max-width: 520px; margin: 0 auto 2rem; }
+}
+
+// =====================================================
+// Footer
+// =====================================================
+
+.footer {
+  background-color: $gray-800;
+  color: rgba(255,255,255,0.7);
+  padding: 3rem 0 1.5rem;
+
+  &-main {
+    align-items: flex-start;
+  }
+
+  &-logo {
+    font-family: $font-family-heading;
+    font-size: 1.15rem;
+    color: $white;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+  }
+
+  &-tagline {
+    font-size: 0.82rem;
+    margin-bottom: 0.9rem;
+    color: rgba(255,255,255,0.55);
+  }
+
+  h4 {
+    color: $white;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.75rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      margin-bottom: 0.35rem;
+      a {
+        color: rgba(255,255,255,0.65);
+        font-size: 0.88rem;
+        &:hover { color: $accent-light; }
+      }
+    }
+  }
+
+  &-contact {
+    font-size: 0.88rem;
+    line-height: 1.7;
+    margin-bottom: 0.75rem;
+    a { color: rgba(255,255,255,0.65); &:hover { color: $accent-light; } }
+  }
+
+  &-hours {
+    font-size: 0.82rem;
+    line-height: 1.7;
+    margin-bottom: 0.6rem;
+    color: rgba(255,255,255,0.6);
+  }
+
+  &-urgence {
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.4);
+    margin-bottom: 0;
+    strong { color: rgba(255,255,255,0.65); }
+  }
+
+  &-map-embed {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.35);
+    iframe { display: block; opacity: 0.85; }
+  }
+
+  &-map-link {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    font-size: 0.82rem;
+    a { color: rgba(255,255,255,0.5); &:hover { color: $accent-light; } }
+  }
+
+  &-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-top: 2rem;
+    padding-top: 1.25rem;
+    text-align: center;
+    font-size: 0.80rem;
+    color: rgba(255,255,255,0.35);
+    a { color: rgba(255,255,255,0.35); &:hover { color: rgba(255,255,255,0.6); } }
+  }
+}
+
+// =====================================================
+// Breadcrumb & utilitaires de page
+// =====================================================
+
+.breadcrumb {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.6);
+
+  li {
+    &::after { content: '/'; margin-left: 0.5rem; }
+    &:last-child::after { content: ''; }
+  }
+
+  a { color: rgba(255,255,255,0.8); &:hover { color: $white; } }
+}
+
+.tag {
+  display: inline-block;
+  background-color: $primary-xlight;
+  color: $primary;
+  padding: 0.2rem 0.65rem;
+  border-radius: 2rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  margin: 0.2rem;
+}
+
+// =====================================================
+// Contact
+// =====================================================
+
+.contact-form {
+  background: $white;
+  border-radius: $border-radius-lg;
+  padding: 2.5rem;
+  box-shadow: $box-shadow;
+
+  .form-group {
+    margin-bottom: 1.25rem;
+    label {
+      display: block;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: $text-secondary;
+      margin-bottom: 0.4rem;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 0.7rem 1rem;
+      border: 1.5px solid $gray-200;
+      border-radius: $border-radius;
+      font-family: $font-family-base;
+      font-size: 0.95rem;
+      color: $text-primary;
+      background: $background;
+      transition: $transition-base;
+      &:focus {
+        outline: none;
+        border-color: $primary;
+        background: $white;
+      }
+    }
+    textarea { min-height: 140px; resize: vertical; }
+  }
+}
+
+.info-box {
+  background: $white;
+  border-radius: $border-radius-lg;
+  padding: 1.75rem;
+  box-shadow: $box-shadow;
+  margin-bottom: 1.5rem;
+
+  h4 {
+    color: $primary-dark;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 1.1em;
+      background-color: $accent;
+      border-radius: 2px;
+    }
+  }
+
+  p, address {
+    font-size: 0.9rem;
+    color: $text-secondary;
+    font-style: normal;
+    line-height: 1.7;
+    margin: 0;
+  }
+}
+
+// =====================================================
+// Cartes rendez-vous (page contact)
+// =====================================================
+
+.rdv-card {
+  background: $white;
+  border-radius: $border-radius-lg;
+  box-shadow: $box-shadow;
+  padding: 1.75rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+
+  &-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, $primary-light, $primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $font-family-heading;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: $white;
+    flex-shrink: 0;
+  }
+
+  &-body { flex: 1; min-width: 0; }
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 0.6rem;
+    flex-wrap: wrap;
+  }
+
+  &-name {
+    font-size: 1.1rem;
+    color: $primary-dark;
+    margin: 0 0 0.2rem;
+  }
+
+  &-role {
+    font-size: 0.82rem;
+    color: $accent;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin: 0;
+  }
+
+  &-profil {
+    font-size: 0.82rem;
+    color: $text-muted;
+    white-space: nowrap;
+    &:hover { color: $primary; }
+  }
+
+  &-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+  }
+
+  &-contacts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    margin-bottom: 1rem;
+  }
+
+  &-dispo-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: $text-muted;
+    margin: 0 0 0.4rem;
+  }
+
+  &-dispo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem 1.25rem;
+    li {
+      font-size: 0.85rem;
+      color: $text-secondary;
+      &::before {
+        content: '–';
+        color: $accent;
+        margin-right: 0.4rem;
+      }
+    }
+  }
+}
+
+.rdv-tag {
+  background-color: $primary-xlight;
+  color: $primary;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.65rem;
+  border-radius: 2rem;
+  letter-spacing: 0.02em;
+}
+
+.rdv-contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.45rem 1rem;
+  border-radius: $border-radius;
+  transition: $transition-base;
+  border: 1.5px solid;
+  text-decoration: none;
+
+  &.rdv-contact-mail {
+    color: $primary;
+    border-color: $primary-light;
+    background: $primary-xlight;
+    &:hover {
+      background: $primary;
+      color: $white;
+      border-color: $primary;
+    }
+  }
+
+  &.rdv-contact-phone {
+    color: $accent;
+    border-color: $accent-light;
+    background: $accent-xlight;
+    &:hover {
+      background: $accent;
+      color: $white;
+      border-color: $accent;
+    }
+  }
+}
+
+// =====================================================
+// Responsive ajustements
+// =====================================================
+
+@media (max-width: 767px) {
+  .hero h1 { font-size: 2rem; }
+  .section { padding: 3rem 0; }
+  .section-title { font-size: 1.6rem; }
+  h1 { font-size: 1.9rem; }
+  h2 { font-size: 1.5rem; }
+  .team-profile-name { font-size: 1.75rem; }
+}

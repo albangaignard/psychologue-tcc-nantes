@@ -1,5 +1,5 @@
 ---
-title: "TCC pour les troubles du sommeil"
+title: "Troubles du sommeil"
 description: "Insomnie, hypersomnolence, réveils nocturnes — reconnaître les signes d'un trouble du sommeil et son impact sur la vie quotidienne."
 icon: "🌙"
 weight: 4

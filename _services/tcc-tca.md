@@ -1,5 +1,5 @@
 ---
-title: "TCC pour les troubles alimentaires"
+title: "Troubles alimentaires"
 description: "Anorexie, boulimie, hyperphagie — reconnaître les signes d'un trouble du comportement alimentaire."
 icon: "🤝"
 weight: 3

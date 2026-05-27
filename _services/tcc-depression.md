@@ -1,5 +1,5 @@
 ---
-title: "TCC pour la dépression"
+title: "Dépression"
 description: "Dépression, burn-out et troubles de l'humeur — reconnaître les signes pour retrouver l'élan vital."
 icon: "☀️"
 weight: 6

@@ -1,5 +1,5 @@
 ---
-title: "TCC pour le burn-out"
+title: "Burn-out"
 description: "Épuisement professionnel — reconnaître les signes du burn-out et les schémas qui l'entretiennent."
 icon: "🔋"
 weight: 5

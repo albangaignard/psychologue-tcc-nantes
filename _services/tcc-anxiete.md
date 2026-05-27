@@ -1,5 +1,5 @@
 ---
-title: "TCC pour l'anxiété"
+title: "Anxiété"
 description: "Troubles anxieux, phobies, TOC et attaques de panique — reconnaître les signes pour mieux les surmonter."
 icon: "🌿"
 weight: 7

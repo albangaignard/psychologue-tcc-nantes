@@ -1,5 +1,5 @@
 ---
-title: "TCC pour l'estime de soi et les relations"
+title: "Estime de soi et relations"
 description: "Affirmation de soi, perfectionnisme, dépendances affectives — apprendre à se respecter et à mieux vivre avec les autres."
 icon: "🤝"
 weight: 0

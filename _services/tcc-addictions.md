@@ -1,5 +1,5 @@
 ---
-title: "TCC pour les conduites addictives"
+title: "Conduites addictives"
 description: "Addictions à l'alcool, aux substances, aux comportements — reconnaître les signes d'une conduite addictive et son emprise sur la vie quotidienne."
 icon: "🔄"
 weight: 2

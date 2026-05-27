@@ -1,5 +1,5 @@
 ---
-title: "TCC pour enfants et adolescents"
+title: "Enfants et adolescents"
 description: "Accompagnement spécialisé des jeunes de 6 à 18 ans et de leurs familles face aux difficultés émotionnelles et comportementales."
 icon: "🌱"
 weight: 1

@@ -15,7 +15,7 @@ permalink: /approches/
 <section class="section">
   <div class="container">
     <div class="row">
-      {% assign services_sorted = site.services | sort: "weight" %}
+      {% assign services_sorted = site.services | sort: "weight" | reverse %}
       {% for service in services_sorted %}
       <div class="col-md-6" style="margin-bottom: 2rem;">
         <div class="service-card">

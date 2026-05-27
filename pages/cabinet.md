@@ -98,6 +98,7 @@ permalink: /cabinet/
           <address>
             129 rue des Hauts Pavés<br>
             44000 Nantes<br><br>
+            🚋 {{ site.transport }}<br><br>
             Accès PMR disponible
           </address>
           <a href="{{ site.maps_url }}" target="_blank" rel="noopener" class="btn btn-outline" style="margin-top: 1rem; font-size: 0.875rem; display: inline-block;">Voir sur Google Maps →</a>

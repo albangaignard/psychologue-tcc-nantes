@@ -8,7 +8,7 @@ description: "Ana Linaza Cea — Psychologue clinicienne et psychothérapeute TC
 <section class="hero">
   <div class="container hero-content">
     <!-- <div class="hero-badge">✦ Thérapies fondées sur les données probantes</div> -->
-    <h1>Un accompagnement fondé<br>sur les TCC</h1>
+    <h1>Psychothérapeute<br>Superviseuse<br>Formatrice en TCC</h1>
     <p class="lead">Je suis psychologue clinicienne et psychothérapeute TCC à Nantes. Ensemble, nous explorons comment
       vos pensées et vos
       émotions influencent votre quotidien — et nous travaillons, pas à pas, à les apprivoiser et à trouver de nouveaux
@@ -54,28 +54,6 @@ description: "Ana Linaza Cea — Psychologue clinicienne et psychothérapeute TC
   </div>
 </section>
 
-<!-- Nos approches -->
-<section class="section">
-  <div class="container">
-    <h2 class="section-title">Nos approches thérapeutiques</h2>
-    <p class="section-subtitle">Fondées sur des décennies de recherche clinique, les TCC sont aujourd'hui parmi les
-      thérapies les mieux validées scientifiquement pour une large gamme de difficultés psychologiques.</p>
-    <div class="row" style="row-gap: 1.5rem;">
-      {% assign sorted_services = site.services | sort: 'weight' | reverse %}
-      {% for service in sorted_services %}
-      <div class="col-md-6 col-lg-3">
-        <div class="service-card">
-          <div class="service-card-icon">{{ service.icon }}</div>
-          <h3>{{ service.title }}</h3>
-          <p>{{ service.excerpt | strip_html | truncatewords: 25 }}</p>
-          <a href="{{ service.url | relative_url }}">En savoir plus →</a>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
 <!-- Équipe -->
 <section class="section section-alt">
   <div class="container">
@@ -89,7 +67,8 @@ description: "Ana Linaza Cea — Psychologue clinicienne et psychothérapeute TC
         <div class="team-card">
           {% if member.photo %}
           <div class="team-card-avatar" style="padding: 0; overflow: hidden;">
-            <img src="{{ member.photo | relative_url }}" alt="Photo de {{ member.title }}" style="width: 100%; height: 100%; object-fit: cover;">
+            <img src="{{ member.photo | relative_url }}" alt="Photo de {{ member.title }}"
+              style="width: 100%; height: 100%; object-fit: cover;">
           </div>
           {% else %}
           <div class="team-card-avatar">{{ member.initials }}</div>
@@ -166,6 +145,29 @@ description: "Ana Linaza Cea — Psychologue clinicienne et psychothérapeute TC
     </div>
   </div>
 </section>
+
+<!-- Nos approches -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Nos approches thérapeutiques</h2>
+    <p class="section-subtitle">Fondées sur des décennies de recherche clinique, les TCC sont aujourd'hui parmi les
+      thérapies les mieux validées scientifiquement pour une large gamme de difficultés psychologiques.</p>
+    <div class="row" style="row-gap: 1.5rem;">
+      {% assign sorted_services = site.services | sort: 'weight' | reverse %}
+      {% for service in sorted_services %}
+      <div class="col-md-6 col-lg-3">
+        <div class="service-card">
+          <div class="service-card-icon">{{ service.icon }}</div>
+          <h3>{{ service.title }}</h3>
+          <p>{{ service.excerpt | strip_html | truncatewords: 25 }}</p>
+          <a href="{{ service.url | relative_url }}">En savoir plus →</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
 
 <!-- CTA -->
 <section class="cta-section">

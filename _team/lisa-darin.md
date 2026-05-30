@@ -11,7 +11,7 @@ formation:
 specialites:  
   - ...
 email: "lisadarin.psychologue@gmail.com"
-phone: "06 73 15 43 35"
+phone: "06 95 79 12 62"
 ---
 
 ## À propos de Lisa Da Rin

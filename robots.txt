@@ -1,0 +1,5 @@
+---
+---
+User-agent: *
+Allow: /
+Sitemap: https://psychologue-tcc-nantes.fr/sitemap.xml

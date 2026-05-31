@@ -23,7 +23,13 @@ permalink: /contact/
         {% assign sorted_team = site.team | sort: "weight" %}
         {% for member in sorted_team %}
         <div class="rdv-card">
-          <div class="rdv-card-avatar">{{ member.initials }}</div>
+          <div class="rdv-card-avatar">
+            {% if member.photo %}
+              <img src="{{ member.photo | relative_url }}" alt="Photo de {{ member.title }}" style="width:100%; height:100%; object-fit:cover; border-radius:50%;">
+            {% else %}
+              {{ member.initials }}
+            {% endif %}
+          </div>
           <div class="rdv-card-body">
             <div class="rdv-card-header">
               <div>

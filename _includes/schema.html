@@ -37,8 +37,6 @@
     "@type": "City",
     "name": "Nantes"
   },
-  "availableLanguage": ["fr", "es"],
-  "medicalSpecialty": "https://schema.org/Psychology",
   "priceRange": "€€",
   "sameAs": []
 }
@@ -61,6 +59,7 @@
   "worksFor": {
     "@id": "{{ site_url }}/#cabinet"
   },
+  "knowsLanguage": ["fr", "es"],
   "knowsAbout": [{% for tag in page.tags %}"{{ tag }}"{% unless forloop.last %}, {% endunless %}{% endfor %}],
   "hasCredential": [{% for f in page.formation %}{"@type": "EducationalOccupationalCredential", "name": "{{ f }}"}{% unless forloop.last %}, {% endunless %}{% endfor %}]
 }

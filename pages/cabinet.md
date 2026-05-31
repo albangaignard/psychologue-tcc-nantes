@@ -38,10 +38,7 @@ permalink: /cabinet/
         <h2 class="section-title">Notre philosophie</h2>
         <p>J'ai créé ce cabinet pour offrir un accompagnement à la hauteur de ce que les personnes traversent — ni dans l'urgence, ni dans le flou, mais avec méthode et présence. Ici, chaque personne est accueillie telle qu'elle est, avec ses difficultés et son histoire, dans un espace sécurisant et sans jugement. Notre volonté : proposer un suivi rigoureux, humain et accessible, fondé sur ce que la recherche a montré d'efficace.</p>
 
-        <p>Nous pratiquons les thérapies cognitives et comportementales (TCC) et les approches de 3ème vague (thérapie d'acceptation et d'engagement (A
-         +CT), pleine conscience (mindfulness), thérapie cognitive processuelle (TCP), thérapie comportementale dialectique (TCD), thérapie des schémas, etc.) Ce n'est pas une collecti
-         +on d'outils, mais un ensemble cohérent d'approches dont l'efficacité est démontrée par la recherche clinique internationale et recommandée par les principales autorités de sant
-         +é.</p>
+        <p>Nous pratiquons les thérapies cognitives et comportementales (TCC) et les approches de 3ème vague (thérapie d'acceptation et d'engagement (ACT), pleine conscience (mindfulness), thérapie cognitive processuelle (TCP), thérapie comportementale dialectique (TCD), thérapie des schémas, etc.) Ce n'est pas une collection d'outils, mais un ensemble cohérent d'approches dont l'efficacité est démontrée par la recherche clinique internationale et recommandée par les principales autorités de santé.</p>
 
         <p>Notre approche est <strong>collaborative</strong> : nous travaillons avec vous, pas à votre place. Vous êtes l'expert de votre propre vie ; nous apportons les outils et le cadre thérapeutique. C'est ensemble que les changements se construisent.</p>
 
